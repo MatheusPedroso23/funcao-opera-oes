@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int soma (int n1,int n2) {
+    return n1 + n2;
+}
+int menos (int n1, int n2) {
+    return n1 - n2;
+}
+int multiplica (int n1, int n2) {
+    return n1 * n2;
+}
+int divisao (int n1, int n2){
+    if (n2 != 0) {
+        return n1 / n2 ;
+    }
+}
+
+int main() {
+    int x, y;
+    printf("digite o primeiro valor: ");
+    scanf("%d", &x);
+    printf("digite o segundo valor: ");
+    scanf("%d", &y);
+    printf("a soma e %d\n", soma(x,y));
+    printf("a subtracao e %d\n", menos(x,y));
+    printf("a multiplicacao e %d\n", multiplica(x,y));
+    printf("a divisao e %d\n", divisao(x,y));
+    return 0;
+}
+
